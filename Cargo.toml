@@ -18,7 +18,9 @@ default = []
 serde = ["dep:serde", "egui/serde"]
 
 [dependencies]
-egui = { version = "0.21", default-features = false }
+#egui = { version = "0.21", default-features = false }
+egui = { git = 'https://github.com/foltz/egui.git', branch = 'curvature' }
+
 serde = { version = "1", optional = true, features = ["derive"] }
 
 duplicate = "1.0"
